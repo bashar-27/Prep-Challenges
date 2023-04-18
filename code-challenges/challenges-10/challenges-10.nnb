@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function birthdayCakeCandles(candles) {\n    let max=candles[0];\n    let count=1;\n    for(let i=1 ; i<=candles.length ; i++){\n        if(candles[i]>max){\n            //count=0;\n            max=candles[i];\n            count=1;\n        }\n        else if(candles[i]==max){\n            count++;\n        }\n    } \nreturn count;\n}"
             ],
             "outputs": []
         },
@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function compareTriplets(a, b) {\n    let arr=[0,0];\nfor(let i=0; i<a.length ; i++){\n    for(let j=i ; j<=i ; j++){\n        if(a[i]>b[j]){\n        arr[0]++;\n    }\n    else if(b[j]>a[i])\n    {\n        arr[1]++;\n        }\n    \n    }\n}\nreturn arr;\n}"
             ],
             "outputs": []
         },
