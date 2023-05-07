@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-// Important Note: 
+// Important Note:
 // Kindly use reduce instead of for in all of your solutions
 
 // Resource:
@@ -9,7 +9,7 @@
 // -------------------------------------------------------------------------------------------------------
 // Challenge 01:
 // Required:
-// 
+//
 // Given an array of objects, count the objects by using reduce method.
 
 // Input:
@@ -39,18 +39,17 @@
 // Output: 5
 
 const objectCounter = (obj) => {
-    return obj.reduce((num,val)=>num+1,0);
-
-}
+  return obj.reduce((num, val) => num + 1, 0);
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
 // Challenge 02:
 // Required:
-// 
+//
 // Given a string input as an argument reverse it using reduce method.
 //
-// Input: 'you shall not pass' 
+// Input: 'you shall not pass'
 // Output: 'pass not shall you'
 //
 // Hint:
@@ -60,16 +59,15 @@ const objectCounter = (obj) => {
 // ------------------------
 
 const stringReverse = (str) => {
-    let string2=str.split(" ");
-    return string2.reduce((acc,val)=>val+" "+acc);
-
-}
+  let string2 = str.split(" ");
+  return string2.reduce((acc, val) => val + " " + acc);
+};
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
 // Challenge 03:
 // Optional:
-// 
+//
 // Using the same array of objects from the first question, create new object that contains the candidates names as keys (voting for),
 // and how many times they got voted to as values using the reduce method.
 //
@@ -106,9 +104,8 @@ const stringReverse = (str) => {
 //
 
 const statistics = (obj) => {
-    // write your code here
-}
+  // write your code here
+};
 // -------------------------------------------------------------------------------------------------------
-
 
 module.exports = { objectCounter, stringReverse, statistics };
