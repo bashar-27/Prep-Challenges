@@ -45,8 +45,11 @@ const recursionPattern = (int1, int2) => {
 // 
 
 const filterLinks = (str) => {
-    // write your code here
-}
+  const regex = /www(.*?).(com|org|net)/;
+  const matchLink = str.match(regex);
+  if (matchLink) {
+    return matchLink[0];}
+  }
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
