@@ -15,7 +15,7 @@
 //
 
 const wordLength = (str) => {
-  str = str.trim();
+  
 
   const words = str.split(/\s+/);
 
